@@ -17,16 +17,12 @@ t
 Dapp/src/main/java/com/demo/samplemp3converter/wrapper/AudioFormat.kt,b\7\b70d4e72f1bd7db26167a2a1c9593a9fc4d541a2
 
 Qapp/src/main/java/com/demo/samplemp3converter/wrapper/callback/ConvertCallback.kt,6\6\661ddd958a482a3af2b8fb2b342c1c86a4127a63
-n
->app/src/main/java/com/demo/samplemp3converter/MainViewModel.kt,8\c\8c5ce929148d303bd5e725551a6af61f86af4db8
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 w
 Gapp/src/main/java/com/demo/samplemp3converter/wrapper/AudioConverter.kt,3\6\3601c5721c6fd1072951a9fe3966ff6e89f4d32d
-p
-@app/src/main/java/com/demo/samplemp3converter/SingleLiveEvent.kt,9\1\91b7b55f7d3eb09228ccfea220c7fd50833bdf42
 r
 Bapp/src/main/java/com/demo/samplemp3converter/common/Mp3Utility.kt,c\6\c6fad07fff1d041794004e7f5c24483c6732e511
 q

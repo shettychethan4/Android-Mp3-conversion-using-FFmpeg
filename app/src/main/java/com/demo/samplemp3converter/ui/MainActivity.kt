@@ -7,13 +7,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import com.demo.samplemp3converter.ui.viewmodel.MainViewModel
 import com.demo.samplemp3converter.R
 import com.demo.samplemp3converter.common.Constants.FILETYPE
 import com.demo.samplemp3converter.common.Constants.REQUEST_CODE_LOCATION_PERMISSION
 import com.demo.samplemp3converter.common.Constants.REQUEST_CODE_PICK_SOUNDFILE
 import com.demo.samplemp3converter.common.Mp3Utility
 import com.demo.samplemp3converter.databinding.ActivityMainBinding
+import com.demo.samplemp3converter.ui.viewmodel.MainViewModel
 import com.google.android.material.snackbar.Snackbar
 import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
@@ -93,10 +93,10 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks, F
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_CODE_PICK_SOUNDFILE && resultCode == RESULT_OK) {
-            if (data != null && data.data != null) {
-                val audioFileUri: Uri? = data.data
-                audioFileUri?.let {
+        if (requestCode == REQUEST_CODE_PICK_SOUNDFILE && resultCode == RESULT_OK && data != null) {
+            data.data?.let {
+                val audioFileUri: Uri = it
+                audioFileUri.let {
                     val myFile = File(audioFileUri.path)
                     val paths = myFile.absolutePath.split(":").toTypedArray()
                     val finalPath = paths.let {
