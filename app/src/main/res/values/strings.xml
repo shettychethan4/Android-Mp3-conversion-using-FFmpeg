@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sample MP3 Converter</string>
+    <string name="msg_mp3_required">Please Choose Mp3 from local storage.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="choose_mp3">Choose Mp3</string>
+    <string name="select_audio_file_title">Select Mp3</string>
+    <string name="mandatory_permission">You need to accept location permissions to use this app.</string>
+    <string name="converted">Converted!!!</string>
+</resources>
